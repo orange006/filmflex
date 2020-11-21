@@ -28,7 +28,7 @@ class Account {
     }
 
     private function validateUsername($un) {
-        if(strlen($un) < 2 || strlen($un) > 25) {
+        if(strlen($un) < 3 || strlen($un) > 50) {
             array_push($this->errorArray, Constants::$usernameCharacters);
             return;
         }
@@ -70,7 +70,7 @@ class Account {
             return;
         }
 
-        if(strlen($pw) < 5 || strlen($pw) > 25) {
+        if(strlen($pw) < 5 || strlen($pw) > 35) {
             array_push($this->errorArray, Constants::$passwordLength);
         }
     }

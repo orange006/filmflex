@@ -85,7 +85,7 @@ html, body {
 
 .errorMessage {
     color: #f00;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 350;
     text-align: center;
 }
