@@ -194,3 +194,16 @@ button i {
     border-radius: 10px;
     background-color: #000;
 }
+
+.previewCategories {
+    padding: 0 50px;
+}
+
+.errorBanner {
+    position: absolute;
+    color: #fff;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
