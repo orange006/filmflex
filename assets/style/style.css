@@ -246,3 +246,7 @@ button i {
 .previewCategories.noScroll .category .videos {
     white-space: normal;
 }
+
+.watchContainer video {
+    width: 100%;
+}
