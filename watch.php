@@ -26,5 +26,5 @@
 </div>
 
 <script>
-	initVideo();
+	initVideo("<?php echo $video->getId(); ?>", "<?php echo $userLoggedIn; ?>");
 </script>
