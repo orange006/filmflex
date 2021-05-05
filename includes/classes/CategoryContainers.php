@@ -1,7 +1,8 @@
 <?php
 class CategoryContainers {
 
-    private $con, $username;
+    private $con;
+    private $username;
 
     public function __construct($con, $username) {
         $this->con = $con;
