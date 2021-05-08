@@ -9,9 +9,7 @@ include_once("includes/header.php");
 <div class="results"></div>
 
 <script>
-
 $(function() {
-
     var username = '<?php echo $userLoggedIn; ?>';
     var timer;
 
@@ -33,5 +31,4 @@ $(function() {
         }, 500);
     });
 });
-
 </script>

@@ -1,6 +1,5 @@
 <?php
 class CategoryContainers {
-
     private $con;
     private $username;
 

@@ -45,6 +45,7 @@ class Entity {
                                     AND isMovie=0 ORDER BY season, episode ASC");
 
         $query->bindValue(":id", $this->getId());
+        
         $query->execute();
 
         $seasons = array();

@@ -55,7 +55,6 @@
             </div>
 
             <form method="POST">
-
                 <input type="text" name="firstName" placeholder="First name" value="<?php getInputValue("firstName"); ?>" required>
                 <?php echo $account->getError(Constants::$firstNameCharacters); ?>
                 
@@ -85,7 +84,5 @@
             <a href="login.php" class="signInMessage">Already have an account? Sign in here!</a>
         </div>
     </div>
-
 </body>
-
 </html>

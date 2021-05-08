@@ -55,7 +55,5 @@
             <a href="register.php" class="signInMessage">Need an account? Sign up here!</a>
         </div>
     </div>
-
 </body>
-
 </html>

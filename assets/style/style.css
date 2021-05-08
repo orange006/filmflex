@@ -20,6 +20,7 @@ a h3:hover {
 
 a {
     text-decoration: none;
+    color: #0654ba;
 }
 
 .wrapper {
@@ -421,4 +422,17 @@ button i {
 
 .alertSuccess {
     color: #2ecc71;
+}
+
+.formSection h3 {
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.usernameInfo {
+    color: #dc1928;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
 }

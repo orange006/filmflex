@@ -6,6 +6,13 @@
 		ErrorMessage::show("No ID passed into page");
 	}
 
+	$user = new User($con, $userLoggedIn);
+
+	if(!$user->getIsSubscribed()) {
+		ErrorMessage::show("You must be subscribed to see this.
+							<a href'profile.php'>Click here to subscribe.</a>");
+	}
+
 	$video = new Video($con, $_GET["id"]);
 	$video->incrementViews();
 

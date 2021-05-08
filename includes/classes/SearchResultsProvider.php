@@ -1,6 +1,5 @@
 <?php
 class SearchResultsProvider {
-
     private $con; 
     private $username;
 

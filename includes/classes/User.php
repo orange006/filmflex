@@ -1,6 +1,7 @@
 <?php
 class User {
-    private $con, $sqlData;
+    private $con; 
+    private $sqlData;
 
     public function __construct($con, $username) {
         $this->con = $con;
@@ -32,6 +33,21 @@ class User {
 
     public function getUsername() {
         return $this->sqlData["username"];
+    }
+
+    public function setIsSubscribed($value) {
+        $query = $this->con->prepare("UPDATE users SET isSubscribed=:isSubscribed
+                                    WHERE username=:un");
+
+        $query->bindValue(":isSubscribed", $value);
+        $query->bindValue(":un", $this->getUsername());
+        
+        if($query->execute()) {
+            $this->sqlData["isSubscribed"] = $value;
+            return true;
+        }
+
+        return false;
     }
 }
 ?>
